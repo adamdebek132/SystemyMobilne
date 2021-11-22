@@ -1,0 +1,13 @@
+
+s
+java:S1450"XRemove the "nameField" field and declare it as a local variable in the relevant methods.(âê¸şÿÿÿÿ
+U
+java:S1854":Remove this useless assignment to local variable "taskId".(½‚°½ıÿÿÿÿ
+F
+java:S1481"+Remove this unused "taskId" local variable.(½‚°½ıÿÿÿÿ
+—
+java:S1186("€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(«û³±
+—
+java:S11860"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(±¾ê
+G
+java:S1602:",Remove useless curly braces around statement(ìÑÔÿÿÿÿÿ
