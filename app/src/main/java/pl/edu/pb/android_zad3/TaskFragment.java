@@ -35,6 +35,8 @@ public class TaskFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_task, container, false);
         nameField = view.findViewById(R.id.task_name);
+        dateButton = view.findViewById(R.id.task_date);
+        doneCheckBox = view.findViewById(R.id.task_done);
         nameField.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -42,7 +44,10 @@ public class TaskFragment extends Fragment {
             }
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
+                TaskStorage taskStorage = TaskStorage.getInstance();
                 task.setName(s.toString());
+                //UUID taskId = (UUID) savedInstanceState.getSerializable("uuid");
+                //taskStorage.getTask(taskId).setName(s.toString());
             }
             @Override
             public void afterTextChanged(Editable s) {
@@ -58,6 +63,8 @@ public class TaskFragment extends Fragment {
         doneCheckBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
             task.setDone(isChecked);
         });
+
+
         return view;
     }
 

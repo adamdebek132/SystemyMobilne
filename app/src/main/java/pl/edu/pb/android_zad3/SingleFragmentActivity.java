@@ -21,7 +21,9 @@ public abstract class SingleFragmentActivity extends AppCompatActivity {
             fragment = createFragment();
             fragmentManager.beginTransaction().add(R.id.fragment_container, fragment).commit();
         }
+
     }
+
 
     protected  abstract Fragment createFragment();
 }

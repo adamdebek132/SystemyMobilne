@@ -1,9 +1,0 @@
-
-r
-java:S3008"\Rename this field "KEY_EXTRA_TASK_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âçŒ¢
-P
-java:S1161O":Add the "@Override" annotation above this method signature(«ÃÀ÷
-s
-java:S1104"]Make KEY_EXTRA_TASK_ID a static final constant or non-public and provide accessors if needed.(âçŒ¢
-M
-java:S1444"7Make this "public static KEY_EXTRA_TASK_ID" field final(âçŒ¢
